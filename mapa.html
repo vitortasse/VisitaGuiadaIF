@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa do Campus - IF Sudeste MG JF</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="index.html" style="color: white; text-decoration: none; position: absolute; left: 20px; font-weight: 600;">← Voltar</a>
+    <h1>Mapa do Campus</h1>
+</header>
+
+<div class="container">
+    <div class="map-container">
+        <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+            
+            <polygon class="pentagon" points="340,250 460,250 480,350 400,420 320,350" class="pentagon" transform="rotate(45, 400, 324)" fill="#c0c0c0"/>
+            
+            <rect class="block" data-name="Bloco C" x="340" y="122" width="90" height="40" transform="rotate(45, 294, 300)" fill="#3cb371" />
+            <rect class="block" data-name="Bloco D" x="515" y="226" width="90" height="40" transform="rotate(124, 490, 290)" fill="#3cb371" />
+            <rect class="block" data-name="Bloco E" x="345" y="404" width="90" height="40" transform="rotate(4, 410, 380)" fill="#3cb371" />
+            <rect class="block" data-name="Bloco A" x="250" y="390" width="90" height="40" transform="rotate(87, 335, 380)" fill="#3cb371" />
+            <rect class="block" data-name="Bloco B" x="310" y="268" width="90" height="40" transform="rotate(-34, 270, 270)" fill="#3cb371" />
+
+            <rect class="block" data-name="Centro Administrativo" x="320" y="540" width="120" height="50" fill="#696969" />
+            <rect class="block" data-name="RU" x="410" y="540" width="50" height="120" fill="#d2691e" />
+            <rect class="block" data-name="Cantina" x="200" y="310" width="50" height="50" fill="#d2691e" />
+            <rect class="block" data-name="Bloco G" x="680" y="290" width="40" height="80" fill="#3cb371" />
+            <rect class="block" data-name="Bloco H" x="710" y="392" width="40" height="80" fill="#3cb371" /> 
+            <rect class="block" data-name="Bloco F" x="680" y="200" width="40" height="80" fill="#3cb371" /> 
+            <rect class="block" data-name="Bloco Q" x="710" y="85" width="40" height="80" fill="#3cb371" /> 
+            <rect class="block" data-name="Bloco M" x="530" y="80" width="50" height="30" fill="#3cb371" /> 
+            <rect class="block" data-name="Ginásio" x="420" y="60" width="100" height="50" fill="#708090" /> 
+            <rect class="block" data-name="Quadra" x="330" y="60" width="80" height="50" fill="#708090" /> 
+            <rect class="block" data-name="Bloco I" x="290" y="120" width="80" height="40" fill="#3cb371" /> 
+            <rect class="block" data-name="Bloco K" x="200" y="120" width="80" height="40" fill="#3cb371" /> 
+            <rect class="block" data-name="Bloco N" x="70" y="280" width="40" height="80" fill="#3cb371" /> 
+            <rect class="block" data-name="Bloco O" x="160" y="400" width="100" height="70" fill="#2e8b57" /> 
+
+            <text x="300" y="350" class="label" fill="#FFFFFF">A</text>
+            <text x="350" y="240" class="label" fill="#FFFFFF">B</text>
+            <text x="465" y="255" class="label" fill="#FFFFFF">C</text>
+            <text x="482" y="380" class="label" fill="#FFFFFF">D</text>
+            <text x="385" y="430" class="label" fill="#FFFFFF">E</text>
+            <text x="205" y="335" class="label" fill="#FFFFFF">CAN-</text>
+            <text x="205" y="345" class="label" fill="#FFFFFF">TINA</text>
+            <text x="695" y="330" class="label" fill="#FFFFFF">G</text>
+            <text x="695" y="240" class="label" fill="#FFFFFF">F</text>
+            <text x="725" y="440" class="label" fill="#FFFFFF">H</text>
+            <text x="330" y="145" class="label" fill="#FFFFFF">I</text>
+            <text x="235" y="145" class="label" fill="#FFFFFF">K</text>
+            <text x="85" y="330" class="label" fill="#FFFFFF">N</text>
+            <text x="548" y="100" class="label" fill="#FFFFFF">M</text>
+            <text x="205" y="440" class="label" fill="#FFFFFF">O</text>
+            <text x="725" y="130" class="label" fill="#FFFFFF">Q</text>
+            <text x="335" y="90" class="label" fill="#FFFFFF">QUADRA</text>
+            <text x="438" y="90" class="label" fill="#FFFFFF">GINASIO</text>
+            <text x="350" y="570" class="label" fill="#FFFFFF">ADM</text>
+            <text x="425" y="580" class="label" fill="#FFFFFF">RU</text>
+        </svg>
+    </div>
+
+    <div class="info-box" id="info-box">
+        <h3 id="info-title">Toque em um Bloco</h3>
+        <p id="info-text">Selecione uma área do campus para ver os detalhes da visita guiada.</p>
+    </div>
+</div>
+
+<script src="mapa.js"></script>
+</body>
+</html>

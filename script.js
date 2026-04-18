@@ -1,5 +1,5 @@
 const dados = [
-    { ini: "13:30", fim: "14:00", atividade: "Recepção", local: "Auditório / Bloco A", cor: "#95a5a6", video: "https://www.youtube.com/@ifsudestemgcampusjuizdefora" },
+    { ini: "13:30", fim: "14:00", atividade: "Recepção", local: "Bloco A", cor: "#95a5a6", video: "https://www.youtube.com/@ifsudestemgcampusjuizdefora" },
     { ini: "14:00", fim: "14:15", atividade: "Baja", local: "Bloco G", cor: "#e74c3c", video: "https://youtu.be/8_PKwso45KM?si=bfL2ieoJNTfrk0xE" },
     { ini: "14:15", fim: "14:30", atividade: "Edificações", local: "Bloco H", cor: "#e67e22", video: "http://www.youtube.com/watch?v=f9_ZZfRyIeA" },
     { ini: "14:30", fim: "14:45", atividade: "Metalurgia", local: "Bloco F", cor: "#1abc9c", video: "http://www.youtube.com/watch?v=W2RlB_SClN8" },
@@ -40,12 +40,12 @@ function atualizarPagina() {
                         <span class="badge-agora">AGORA</span>
                     </div>
                     <h2 class="titulo">${item.atividade}</h2>
-                    <div class="local-info">
+                    <a href="mapa.html?bloco=${item.local}" class="local-info-link">
                         <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                         </svg>
                         ${item.local}
-                    </div>
+                    </a>
                     ${linkVideo}
                 </div>
             </div>

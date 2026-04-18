@@ -1,0 +1,88 @@
+:root {
+    --primary: #32a041;
+    --primary-dark: #267a31;
+    --secondary: #e30613;
+    --bg: #f0f2f5;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: var(--bg);
+}
+
+header {
+    background: var(--primary);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.btn-back {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.map-view {
+    background: white;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.road {
+    fill: none;
+    stroke: #94a3b8;
+    stroke-width: 40;
+    stroke-linecap: round;
+}
+
+.road-line {
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 2;
+    stroke-dasharray: 10, 15;
+    stroke-linecap: round;
+    opacity: 0.6;
+}
+
+.pentagon {
+    fill: #cbd5e0;
+    stroke: #a0aec0;
+    stroke-width: 2;
+}
+
+.block {
+    cursor: pointer;
+    transition: filter 0.2s, fill 0.2s;
+}
+
+.map-label {
+    fill: white;
+    font-size: 14px;
+    font-weight: 800;
+    pointer-events: none;
+    text-anchor: middle;
+}
+
+.info-panel {
+    margin-top: 20px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 8px solid var(--primary);
+}
+
+#info-title {
+    margin: 0;
+    color: var(--primary-dark);
+}
